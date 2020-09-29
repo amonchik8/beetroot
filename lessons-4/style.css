@@ -1,0 +1,50 @@
+.fig {
+    text-align: center; 
+     }
+.cars {
+    text-align: center;
+       }
+.border{
+    border-style: dashed;
+       }
+.text {
+    width: 760px;
+    margin: auto;
+    text-align: left; 
+    font-size: 18px;
+      }
+.blue {
+    color: #212CFF;
+       }
+.blueandcurs {
+    color: #212CFF;
+    font-style: italic;
+    font-weight: bold;
+      }
+.bold {
+    font-weight: bold;
+      }
+.italic {
+    font-style: italic;
+      }
+header {
+    margin: auto;
+    width: 760px;
+       }      
+h1 {
+    margin: auto;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #A52A2A;
+      }
+h2 {
+    font-weight: normal;
+      }
+footer {
+    width: 760px;
+    margin: auto;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-size: 20px;
+       }
