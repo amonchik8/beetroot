@@ -1,0 +1,11 @@
+:root {
+    --BG-COLOR:
+    --BG-LIST-COLOR:
+    --FOOTER
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    touch-action: manipulation;
+}

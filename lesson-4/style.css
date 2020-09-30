@@ -1,9 +1,14 @@
 .fig {
     text-align: center; 
+    margin-top: 25px;
      }
 .cars {
     text-align: center;
-       }
+    list-style: none;
+          }
+.li {
+  display: inline;
+}
 .border{
     border-style: dashed;
        }
