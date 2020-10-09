@@ -80,13 +80,6 @@ body {
     text-decoration: line-through; 
     color: var(--CHECKED-COLOR);
 }
-.checkbox-list__features-square:checked {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 15px;
-    color: #f3f3f3;
-    text-align: center;
-    line-height: 15px;
-}
 .footer {
     background-color: var(--FOOTER-BG-COLORL);
     color: var(--TITLE-COLOR);
