@@ -54,6 +54,9 @@ body, h3 {
 .feature-card__icon-wrapper:hover {
     background-color: var(--BG-COLOR);
 }
+.feature-card__icon-wrapper:hover svg {
+    fill: var(--ICON-COLOR);
+}
 .tablet-use {
     width: 22px;
     height: 30px;
