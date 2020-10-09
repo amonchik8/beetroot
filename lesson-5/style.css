@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+--WHITE: #ffffff;
+--YELLOW: #ffae08;
+--DARK: #1d1c1c;
+--BASE-FONT: 'Raleway', sans-serif;
+--CONTAINER: 1098px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--BASE-FONT);
+    color: var(--WHITE)
+}
+.container {
+    width: 100%;
+    max-width: var(--CONTAINER) ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section {
+    background-color: var(--DARK);
+    padding: 108px 24px 73px;
+}
+.features-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 -32px;
+    flex-wrap: wrap;
+}
+.features-list__item {
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+}
+.feature-card {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.feature-card__icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px 0;
+    background-color: var(--YELLOW);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 39px;
+}
+.feature-card__icon-plane {
+position: relative;
+top: -1px;
+}
+.feature-card__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+.feature-card__description {
+    font-size: 14px;
+    line-height: 1.72;
+    text-align: center;
+}

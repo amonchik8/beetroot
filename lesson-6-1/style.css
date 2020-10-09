@@ -17,8 +17,8 @@ body {
     background-color: var(--BG-COLOR);
 }
 .main {
-    height: 100%;
-    border: 4px double black;
+    min-height: 100vh;
+    border: 15px solid #ffffff;
     
 }
 .header {
