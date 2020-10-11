@@ -56,14 +56,9 @@
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
   background-color: var(--BG-COLOR);
-}
-
-.main-container {
-  height: 100vh;
-  width: var(--MAIN-CONTAINER);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .header {
@@ -123,7 +118,6 @@ body {
 }
 
 .main {
-  height: 100vh;
   display: flex;
   width: var(--CONTAINER);
   background-color: white;
