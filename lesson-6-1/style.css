@@ -3,3 +3,103 @@
     padding: 0;
     box-sizing: border-box;
 }
+* {
+    transition: all .1s ease-in;
+}
+:root {
+    --HEADER-BG-COLOR: #474E50;
+    --FOOTER-BG-COLORL: #444B4D;
+    --EVEN-LIST-COLOR: #78778F;
+    --ODD-LIST-COLOR: #85849A;
+    --LIST-FEATURES-COLOR: #ffffff;
+    --TITLE-COLOR: #EE8980;
+    --BG-COLOR: #373F41;
+    --HOVER-COLOR: #5D5F72;
+    --CHECKED-COLOR: #9A9CAF;
+    --NOTATION-COLOR: #ADACBE;
+
+}
+body {
+    font-family: \'Trebuchet\', Arial, sans-serif;
+    background-color: var(--BG-COLOR);
+}
+.container {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main {
+    min-height: 100vh;
+    border: 12px solid #ffffff;
+}
+.header {
+    background-color: var(--HEADER-BG-COLOR);
+    color: var(--TITLE-COLOR);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+    padding: 13px 0;
+}
+.header-title {
+    margin-bottom: 3px;
+    font-weight: 600;  
+}
+.title-description {
+    font-weight: 400;
+}
+.checkbox-list {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+.checkbox-list__features {
+    color: var(--LIST-FEATURES-COLOR);
+}
+.checkbox-list__features:nth-child(odd) {
+    background-color: var(--ODD-LIST-COLOR);
+}
+.checkbox-list__features:nth-child(even) {
+    background-color: var(--EVEN-LIST-COLOR);
+}
+.checkbox-list__features:hover {
+    background-color: var(--HOVER-COLOR);
+    border-top: 3px solid var(--LIST-FEATURES-COLOR);
+    border-bottom: 3px solid var(--LIST-FEATURES-COLOR);
+}
+.checkbox-list__features:active {
+    background-color: var(--TITLE-COLOR);
+}
+.checkbox-list__features-square {
+    width: 18px;
+    height: 18px;
+    margin-left: 9px;
+    margin-right: 12px;
+}
+.checkbox-list__features-square:checked ~ .checkbox-list__features-text{
+    text-decoration: line-through; 
+    color: var(--CHECKED-COLOR);
+}
+.footer {
+    background-color: var(--FOOTER-BG-COLORL);
+    color: var(--TITLE-COLOR);
+    text-align: center;
+    padding: 13px 0;
+} 
+.checkbox-list__label {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.notation {
+    font-size: 12px;
+    color: var(--NOTATION-COLOR);
+}
+.notation::before {
+    content: " ( ";
+}
+.notation::after {
+    content: " )";
+}
