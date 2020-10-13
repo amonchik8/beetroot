@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-plugin-clean-dist": "^0.0.6"
+    "parcel-plugin-clean-dist": "0.0.6",
+    "sass": "^1.27.0"
   }
 }
