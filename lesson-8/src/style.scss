@@ -33,10 +33,10 @@ body {
     top: 47px;
     left: 720px;
 }
-.header-container {
+.header__container {
     width: 100vh;
 }
-.header-title {
+.header__title {
     color: var(--TITLE-COLOR);
     font-family: var(--PRETITLE-FONT);
     padding-bottom: 10px;
@@ -45,7 +45,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 4.8px;
 }
-.header-input {
+.header__input {
     background-color: var(--H-COLOR);
     border: 0 solid var(--H-COLOR);
     font-family: 'Playfair Display', serif;
@@ -54,7 +54,7 @@ body {
     font-size: 48px;
     outline: none;
 }
-.header-separator {
+.header__separator {
     margin-top: 18px;
     border: 1px solid #8f8f8f;
 }
@@ -131,103 +131,13 @@ body {
     margin-left: 67px;
     padding-left: 55px;
 }
-.text-use {
+.menu-list__item-icon {
     width: 28px;
     height: 27px;
     fill: var(--ICON-COLOR);
 }
-.text-use:hover {
+.menu-list__item-icon:hover {
     width: 28px;
     height: 27px;
     fill: #ffffff;
 }
-.size-use {
-    width: 28px;
-    height: 27px;
-    fill: var(--ICON-COLOR);
-}
-.size-use:hover {
-    width: 28px;
-    height: 27px;
-    fill: #ffffff;
-}
-.photo-use {
-    width: 28px;
-    height: 27px;
-    fill: var(--ICON-COLOR);
-}
-.photo-use:hover {
-    width: 28px;
-    height: 27px;
-    fill: #ffffff;
-}
-.bold-use {
-    width: 28px;
-    height: 27px;
-    fill: var(--ICON-COLOR);
-}
-.bold-use:hover {
-    width: 28px;
-    height: 27px;
-    fill: #ffffff;
-}
-.italic-use {
-    width: 28px;
-    height: 27px;
-    fill: var(--ICON-COLOR);
-}
-.italic-use:hover {
-    width: 28px;
-    height: 27px;
-    fill: #ffffff;
-}
-.underline-use {
-    width: 28px;
-    height: 27px;
-    fill: var(--ICON-COLOR);
-}
-.underline-use:hover {
-    width: 28px;
-    height: 27px;
-    fill: #ffffff;
-}
-.justify-use {
-    width: 28px;
-    height: 27px;
-    fill: var(--ICON-COLOR);
-}
-.justify-use:hover {
-    width: 28px;
-    height: 27px;
-    fill: #ffffff;
-}
-.left-use {
-    width: 28px;
-    height: 27px;
-    fill: var(--ICON-COLOR);
-}
-.left-use:hover {
-    width: 28px;
-    height: 27px;
-    fill: #ffffff;
-}
-.center-use {
-    width: 28px;
-    height: 27px;
-    fill: var(--ICON-COLOR);
-}
-.center-use:hover {
-    width: 28px;
-    height: 27px;
-    fill: #ffffff;
-}
-.right-use {
-    width: 28px;
-    height: 27px;
-    fill: var(--ICON-COLOR);
-}
-.right-use:hover {
-    width: 28px;
-    height: 27px;
-    fill: #ffffff;
-} 
