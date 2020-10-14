@@ -1,0 +1,10 @@
+.menu-list {
+    list-style: none;
+    &__item {
+        display: inline;
+        text-transform: uppercase;
+    }
+    &__item:not(:last-of-type) {
+        margin-right: 30px;
+    }
+}

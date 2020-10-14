@@ -1,3 +1,18 @@
-body {
-    color: gold;
-}
+@import './vars';
+@import './common';
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+//components
+@import './components/header';
+@import './components/container';
+@import './components/logo';
+@import './components/menu';
+@import './components/menu-list';
+@import './components/home';
+@import './components/about';
+@import './components/content-box';
+
+//images
+@import url('./components/images/img.png');

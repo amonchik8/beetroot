@@ -1,5 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  color: gold;
+  font-family: "Ralewey", sans-serif;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1175px;
+  min-height: 100vh;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
+
+.menu-list {
+  list-style: none;
+}
+.menu-list__item {
+  display: inline;
+  text-transform: uppercase;
+}
+.menu-list__item:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.home {
+  display: flex;
+  background-color: gold;
+  flex-grow: 2;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: blue;
+  flex-grow: 1;
+}
+
+.content-box {
+  width: 300px;
+}
+.content-box__home {
+  margin-left: 30px;
+}
+.content-box__about {
+  margin-right: 30px;
+}
+.content-box__title {
+  margin-bottom: 15px;
+}
+.content-box__description {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
