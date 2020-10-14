@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('/ProximaNova-Regular.d19ec9bc.woff2') format('woff2'),
-        url('/ProximaNova-Regular.c0b5ae6d.woff') format('woff');
+    src: url('ProximaNova-Regular.87b5db7d.woff2') format('woff2'),
+        url('ProximaNova-Regular.da38082e.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('/ProximaNova-Light.9b038c22.woff2') format('woff2'),
-        url('/ProximaNova-Light.27767b54.woff') format('woff');
+    src: url('ProximaNova-Light.17a024b9.woff2') format('woff2'),
+        url('ProximaNova-Light.0a557439.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -18,22 +18,20 @@
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('/ProximaNova-Bold.c138c956.woff2') format('woff2'),
-        url('/ProximaNova-Bold.df2beb52.woff') format('woff');
+    src: url('ProximaNova-Bold.d9393d17.woff2') format('woff2'),
+        url('ProximaNova-Bold.30c1f3d9.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
-
 @font-face {
     font-family: 'Futura PT';
-    src: url('/FuturaPT-Heavy.73899517.woff2') format('woff2'),
-        url('/FuturaPT-Heavy.a0c53f20.woff') format('woff');
+    src: url('FuturaPT-Heavy.890b21c7.woff2') format('woff2'),
+        url('FuturaPT-Heavy.c524f75c.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
-
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 * {
@@ -196,5 +194,3 @@ body {
   height: 27px;
   fill: #ffffff;
 }
-
-/*# sourceMappingURL=/style.97fcb138.css.map */
