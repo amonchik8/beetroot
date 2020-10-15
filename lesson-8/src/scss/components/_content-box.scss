@@ -1,0 +1,27 @@
+.content-box {
+    font-weight: 300;
+    &__home {
+        width: 375px;
+    }
+    &__about {
+        color: #fff;
+        width: 517px;
+    }
+    &__title {
+        font-family: $BASE-FONT, sans-serif;
+        font-size: $H60;
+        font-weight: 800;
+        margin-bottom: 20px;
+    &--bigger {
+       // @include text($H90, 600, $BLACK);
+       font-size: $H90;
+       font-weight: 600;
+    }
+    }
+    &__description {
+        font-family: $BASE-FONT, sans-serif;
+        font-size: $H17;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,25 @@
+@import './vars';
+@import './common';
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+//components
+@import './components/header';
+@import './components/container';
+@import './components/logo';
+@import './components/menu';
+@import './components/menu-list';
+@import './components/home';
+@import './components/about';
+@import './components/content-box';
+@import './components/img';
+@import './components/main';
+@import './components/button';
+@import './components/icon';
+@import './components/mixins';
+
+//images
