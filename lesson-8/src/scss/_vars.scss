@@ -1,6 +1,23 @@
+//Colors
 $BUTTON-COLOR: #ff6033;
 $BG-FOOTER-COLOR: #00c4c4;
+$WHITE: #fff;
+$BLACK: #000;
 
+// Fonts
 $LOGO-FONT: 'Pacifico';
-$BASE-FONT: 'Ralewey', sans-serif;
+$BASE-FONT: 'Ralewey';
+$base-font-size: 16px;
 
+//Font Sizes
+@function calcRem($size) {
+    $remSize: $size / $base-font-size;
+    @return #{$remSize}rem;
+}
+
+$H90: calcRem(90px);
+$H60: calcRem(60px);
+$H48: calcRem(48px);  
+$H20: calcRem(20px);
+$H17: calcRem(17px);
+$H16: calcRem(16px);

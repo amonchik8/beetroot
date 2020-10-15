@@ -1,7 +1,8 @@
 .about {
     display: flex;
     align-items: center;
+    width: 100%;
     justify-content: space-between;
+    padding: 0 200px;
     background-color: $BG-FOOTER-COLOR;
-    flex-grow: 1;
 }
