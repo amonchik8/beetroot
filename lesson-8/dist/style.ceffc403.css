@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Light.5df82332.woff2') format('woff2'),
+        url('Lato-Light.faacc6b7.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('Miso-Light.cd5e26fb.woff2') format('woff2'),
+        url('Miso-Light.8273e967.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('Miso-Bold.7ff28012.woff2') format('woff2'),
+        url('Miso-Bold.72f9cbcb.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('Miso-Bold.7ff28012.woff2') format('woff2'),
+        url('Miso-Bold.72f9cbcb.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('Miso-Light.cd5e26fb.woff2') format('woff2'),
+        url('Miso-Light.8273e967.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('Miso.50649910.woff2') format('woff2'),
+        url('Miso.794ae820.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('Miso.50649910.woff2') format('woff2'),
+        url('Miso.794ae820.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  background-color: #FDDE7E;
+  flex-grow: 1;
+  max-width: 1200px;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 80px 30px 60px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.list__item {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 16px 0;
+  margin-bottom: 20px;
+}
+.list__item--middle {
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+.list__title {
+  color: #02995B;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: "Miso";
+  margin-top: 10px;
+  padding-bottom: 13px;
+}
+.list__title--middle {
+  margin-top: 20px;
+}
+.list__picture-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list__picture-container--middle {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.list__steam {
+  margin-bottom: -35px;
+  position: relative;
+  right: 5px;
+}
+.list__corn {
+  position: relative;
+  top: 60px;
+  right: 7px;
+}
+.list__cup {
+  padding-bottom: 20px;
+}
+.list__subtitle-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 102px 20px;
+}
+.list__subtitle {
+  display: inline-block;
+  font-family: "Miso";
+  font-size: 56px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.list__description {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
