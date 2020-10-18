@@ -11,22 +11,29 @@
 body {
   font-size: 16px;
   font-family: "Ralewey";
-  min-height: 100vh;
-}
-
-.header {
-  display: flex;
-  padding: 10px 0;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  padding: 0 200px;
+}
+
+.header {
+  background-image: url("img.be7347f9.png");
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-title {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -59,29 +66,20 @@ body {
 
 .home {
   display: flex;
-  align-items: center;
-  width: 100%;
+  flex-direction: column;
   flex-grow: 1;
 }
 
 .about {
   display: flex;
-  align-items: center;
-  width: 100%;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 0 200px;
   background-color: #00c4c4;
 }
 
 .content-box {
+  margin: auto 0;
   font-weight: 300;
-}
-.content-box__home {
-  width: 375px;
-}
-.content-box__about {
-  color: #fff;
-  width: 517px;
 }
 .content-box__title {
   font-family: "Ralewey", sans-serif;
@@ -92,6 +90,7 @@ body {
 .content-box__title--bigger {
   font-size: 5.625rem;
   font-weight: 600;
+  color: #fff;
 }
 .content-box__description {
   font-family: "Ralewey", sans-serif;
@@ -99,24 +98,17 @@ body {
   line-height: 27px;
   margin-bottom: 20px;
 }
+.content-box--home {
+  max-width: 375px;
+}
+.content-box--about {
+  color: #fff;
+  max-width: 517px;
+}
 
 .img {
-  width: 640px;
-  height: 640px;
-}
-.main {
-  background-image: url("img.be7347f9.png");
-  width: 100%;
-  min-height: 100vh;
-}
-.main__content {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 0 200px;
-  padding-bottom: 20px;
+  max-width: 100%;
+  height: auto;
 }
 
 .button {
@@ -127,7 +119,7 @@ body {
   font-family: "Ralewey", sans-serif;
   color: #fff;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
   height: 50px;
   width: 200px;
@@ -138,6 +130,7 @@ body {
 .icon {
   display: flex;
   justify-content: center;
+  margin-bottom: 70px;
 }
 .icon__scroll {
   width: 40px;

@@ -8,18 +8,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 //components
+@import './components/mixins';
 @import './components/header';
-@import './components/container';
+@import './components/main-title';
 @import './components/logo';
-@import './components/menu';
 @import './components/menu-list';
 @import './components/home';
 @import './components/about';
 @import './components/content-box';
 @import './components/img';
-@import './components/main';
 @import './components/button';
 @import './components/icon';
-@import './components/mixins';
+
 
 //images

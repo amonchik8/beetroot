@@ -1,8 +1,8 @@
 .header {
-    display: flex;
-    padding: 10px 0;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
+    background-image: url('components/images/img.png');
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
