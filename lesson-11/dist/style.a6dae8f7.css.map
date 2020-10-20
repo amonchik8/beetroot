@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss\\_common.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAEJ;EACI","file":"style.a6dae8f7.css","sourceRoot":"..\\src","sourcesContent":["* {\r\n    box-sizing: border-box;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\nbody {\r\n    color: gold;\r\n}"]}
