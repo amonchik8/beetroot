@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 143px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #898f99;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 4.8px;
+  margin-bottom: 35px;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #0ec8cb;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 4.8;
+  font-weight: 600;
+  margin-bottom: 44px;
+}
+.title__description {
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  max-width: 500px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: center;
+  color: #898f99;
+  margin-bottom: 108px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+.list__item {
+  display: inline;
+  width: 25%;
+}
+.list__item:hover {
+  background-color: #0ec8cb;
+  color: #fff;
+}
+.list__item:hover svg {
+  fill: #fff;
+}
+
+.item__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 27px;
+}
+.item__title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  margin-bottom: 33px;
+}
+.item__card-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 55px;
+}
+.item__card-icon--small-monitor {
+  width: 64px;
+  height: 52px;
+}
+.item__card-icon--small-eyeglasses {
+  width: 66px;
+  height: 49px;
+}
+.item__description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}

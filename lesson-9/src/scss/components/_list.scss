@@ -1,0 +1,15 @@
+.list {
+    display: flex;
+    list-style: none;
+    &__item {
+        display: inline;
+        width: 25%;
+    }
+    &__item:hover {
+        background-color: $MAIN-COLOR;
+        color: $WHITE;
+    }
+    &__item:hover svg {
+        fill: $WHITE;
+    }
+}
