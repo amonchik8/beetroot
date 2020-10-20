@@ -1,0 +1,19 @@
+.title {
+    text-transform: uppercase;
+    color: $MAIN-COLOR;
+    font-family: $TITLE-FONT;
+    font-size: $H48;
+    letter-spacing: 4.8;
+    font-weight: 600;
+    margin-bottom: 44px;
+    &__description {
+        text-transform: uppercase;
+        font-family: $DESCRIPTION-FONT;
+        max-width: 500px;
+        font-size: $H18;
+        font-weight: 400;
+        text-align: center;
+        color: #898f99;
+        margin-bottom: 108px;
+    }
+}
