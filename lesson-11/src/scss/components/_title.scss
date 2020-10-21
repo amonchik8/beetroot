@@ -1,0 +1,19 @@
+.title {
+    margin-top: 100px;
+    color: $WHITE;
+    font-size: $H90;
+    font-weight: 700;
+    font-family: $BASE-FONT;
+    text-align: center;
+    margin-bottom: 30px;
+    &__description {
+        max-width: 565px;
+        color: $WHITE;
+        font-size: $H17;
+        font-weight: 300;
+        font-family: $BASE-FONT;
+        line-height: 25px;
+        text-align: center;
+        padding-bottom: 47px;
+    }
+}

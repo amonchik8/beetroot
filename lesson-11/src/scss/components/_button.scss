@@ -1,0 +1,11 @@
+.button {
+    background-color: $BUTTON-COLOR;
+    height: 55px;
+    width: 200px;
+    border: 0 solid $WHITE;
+    color: $WHITE;
+    text-transform: uppercase;
+    font-size: $H20;
+    font: 300;
+    font-family: $BASE-FONT;
+}

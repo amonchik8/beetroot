@@ -1,0 +1,13 @@
+.list {
+    display: flex;
+    list-style: none;
+    font-size: 0;
+    margin-bottom: 50px;
+    &__item {
+        display: inline-block;
+        flex-wrap: wrap;
+    }
+    &__item:not(:last-of-type) {
+        margin-right: 30px;
+    }
+}

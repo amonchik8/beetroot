@@ -4,5 +4,12 @@
     padding: 0;
 }
 body {
-    color: gold;
+    display: flex;
+    justify-content: center;
+    font-size: $base-font-size;
+    font-family: $BASE-FONT;
+    background-color: $BG-COLOR;
+}
+.container {
+    max-width: 1170px;
 }
