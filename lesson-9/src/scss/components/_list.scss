@@ -7,6 +7,11 @@
     }
     &__item:hover {
         background-color: $MAIN-COLOR;
+    }
+    &__item:hover .card {
+        color: $WHITE;
+    }
+    &__item:hover .card__description {
         color: $WHITE;
     }
     &__item:hover svg {

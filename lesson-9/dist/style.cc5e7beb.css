@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans&display=swap");
 * {
   box-sizing: border-box;
@@ -69,19 +66,24 @@ body {
 }
 .list__item:hover {
   background-color: #0ec8cb;
+}
+.list__item:hover .card {
+  color: #fff;
+}
+.list__item:hover .card__description {
   color: #fff;
 }
 .list__item:hover svg {
   fill: #fff;
 }
 
-.item__card {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 55px 27px;
 }
-.item__title {
+.card__title {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -89,23 +91,27 @@ body {
   font-weight: 600;
   margin-bottom: 33px;
 }
-.item__card-icon {
+.card__icon {
   width: 64px;
   height: 64px;
   margin-bottom: 55px;
 }
-.item__card-icon--small-monitor {
+.card__icon--small-monitor {
   width: 64px;
   height: 52px;
 }
-.item__card-icon--small-eyeglasses {
+.card__icon--small-eyeglasses {
   width: 66px;
   height: 49px;
 }
-.item__description {
+.card__icon--small-margin {
+  margin-bottom: 35px;
+}
+.card__description {
   font-family: "PT Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 22px;
   text-align: center;
+  color: #898f99;
 }
