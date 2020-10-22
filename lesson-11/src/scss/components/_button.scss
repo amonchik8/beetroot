@@ -4,6 +4,6 @@
     width: 200px;
     border: 0 solid $WHITE;
     text-transform: uppercase;
-    @include text($H20, 300, $WHITE)
-    
+    @include text($H20, 300, $WHITE);
+    margin-bottom: 30px;
 }

@@ -1,18 +1,10 @@
 .list {
-    display: flex;
-    list-style: none;
-    font-size: 0;
-    margin-bottom: 30px;
+    @include flex(center);
     flex-wrap: wrap;
-    margin: 0 -10px;
-    justify-content: center;
+    list-style: none;
+    margin: 0 -15px;
+    //max-width: 1170px;
     &__item {
-        display: inline-block;
-        flex-wrap: wrap;
-        margin: 0 10px 10px 0;
-        width: calc(33.3% - 10px);
-    }
-    &__item:last-of-type {
-        margin: 0 0 10px 0;
+    margin: 0 15px 30px;
     }
 }
