@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
 }
+body, button, h2 {
+    font-family: $BASE-FONT;
+}
 body {
     display: flex;
     justify-content: center;
     font-size: $base-font-size;
-    font-family: $BASE-FONT;
     background-color: $BG-COLOR;
 }
 .container {
