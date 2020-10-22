@@ -1,17 +1,10 @@
 .title {
     margin-top: 100px;
-    color: $WHITE;
-    font-size: $H90;
-    font-weight: 700;
-    font-family: $BASE-FONT;
-    text-align: center;
+    @include text($H90, 700, $WHITE);
     margin-bottom: 30px;
     &__description {
         max-width: 565px;
-        color: $WHITE;
-        font-size: $H17;
-        font-weight: 300;
-        font-family: $BASE-FONT;
+        @include text($H17, 300, $WHITE);
         line-height: 25px;
         text-align: center;
         padding-bottom: 47px;

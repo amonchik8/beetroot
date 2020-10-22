@@ -1,5 +1,3 @@
 .blog {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (flex-start, center, column, wrap);
 }

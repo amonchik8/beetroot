@@ -2,12 +2,17 @@
     display: flex;
     list-style: none;
     font-size: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    justify-content: center;
     &__item {
         display: inline-block;
         flex-wrap: wrap;
+        margin: 0 10px 10px 0;
+        width: calc(33.3% - 10px);
     }
-    &__item:not(:last-of-type) {
-        margin-right: 30px;
+    &__item:last-of-type {
+        margin: 0 0 10px 0;
     }
 }
