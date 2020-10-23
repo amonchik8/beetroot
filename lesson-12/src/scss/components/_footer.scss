@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    height: 90px;
+    background-color: $FOOTER-COLOR;
+    &__inner {
+        @include flex(space-between, center, row);
+    }
+    &__description {
+        @include text($H16, 300, $FOOTER-TEXT-COLOR);
+        &--red {
+            @include text($H15, 700, $LOVE-COLOR);
+        }
+    }
+    &__logo {
+        @include text($H25, 400, $FOOTER-TEXT-COLOR);
+        font-family: 'Pacifico';
+    }
+}
