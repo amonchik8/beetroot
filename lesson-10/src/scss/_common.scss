@@ -4,11 +4,12 @@
     padding: 0;
 }
 body {
-    font-size: $base-font-size;
-    font-family: $BASE-FONT;
-}
-.container {
+    font-size: 16px;
+    font-family: "Ralewey";
+  }
+  
+  .container {
     display: flex;
     flex-direction: column;
     padding: 0 200px;
-}
+  }

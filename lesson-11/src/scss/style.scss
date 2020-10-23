@@ -1,0 +1,16 @@
+@import './vars';
+@import './mixins';
+@import './common';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;900&display=swap');
+
+
+
+//components
+@import './components/title';
+@import './components/blog';
+@import './components/list';
+@import './components/item';
+@import './components/button';
+@import './components/card';
