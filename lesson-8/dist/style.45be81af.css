@@ -1,17 +1,16 @@
 @font-face {
     font-family: 'Lato';
-    src: url('/Lato-Light.bbd4f251.woff2') format('woff2'),
-        url('/Lato-Light.60221fcb.woff') format('woff');
+    src: url('Lato-Light.5df82332.woff2') format('woff2'),
+        url('Lato-Light.faacc6b7.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
-
 @font-face {
     font-family: 'Miso';
-    src: url('/Miso-Light.574ea43a.woff2') format('woff2'),
-        url('/Miso-Light.b8ecf1cc.woff') format('woff');
+    src: url('Miso-Light.cd5e26fb.woff2') format('woff2'),
+        url('Miso-Light.8273e967.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -19,8 +18,8 @@
 
 @font-face {
     font-family: 'Miso';
-    src: url('/Miso-Bold.6f403fe1.woff2') format('woff2'),
-        url('/Miso-Bold.ed8fffaa.woff') format('woff');
+    src: url('Miso-Bold.7ff28012.woff2') format('woff2'),
+        url('Miso-Bold.72f9cbcb.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -28,8 +27,8 @@
 
 @font-face {
     font-family: 'Miso';
-    src: url('/Miso-Bold.6f403fe1.woff2') format('woff2'),
-        url('/Miso-Bold.ed8fffaa.woff') format('woff');
+    src: url('Miso-Bold.7ff28012.woff2') format('woff2'),
+        url('Miso-Bold.72f9cbcb.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -37,8 +36,8 @@
 
 @font-face {
     font-family: 'Miso';
-    src: url('/Miso-Light.574ea43a.woff2') format('woff2'),
-        url('/Miso-Light.b8ecf1cc.woff') format('woff');
+    src: url('Miso-Light.cd5e26fb.woff2') format('woff2'),
+        url('Miso-Light.8273e967.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -46,8 +45,8 @@
 
 @font-face {
     font-family: 'Miso';
-    src: url('/Miso.340bec4c.woff2') format('woff2'),
-        url('/Miso.211dbd65.woff') format('woff');
+    src: url('Miso.50649910.woff2') format('woff2'),
+        url('Miso.794ae820.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -55,13 +54,12 @@
 
 @font-face {
     font-family: 'Miso';
-    src: url('/Miso.340bec4c.woff2') format('woff2'),
-        url('/Miso.211dbd65.woff') format('woff');
+    src: url('Miso.50649910.woff2') format('woff2'),
+        url('Miso.794ae820.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
 }
-
 
 * {
   box-sizing: border-box;
@@ -154,5 +152,3 @@ body {
   font-weight: 300;
   font-size: 20px;
 }
-
-/*# sourceMappingURL=/style.a6dae8f7.css.map */
