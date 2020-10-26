@@ -1,0 +1,8 @@
+.title {
+    @include text($H90, 700, $WHITE);
+    line-height: 27px;
+    &__services {
+    position: absolute; 
+    max-width: 545px;
+    }
+}
