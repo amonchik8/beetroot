@@ -1,0 +1,19 @@
+//Colors
+
+
+//
+$base-font-size: 16px;
+
+//Font Sizes
+@function calcRem($size) {
+    $remSize: $size / $base-font-size;
+    @return #{$remSize}rem;
+}
+
+$H90: calcRem(90px);
+$H32: calcRem(32px); 
+$H25: calcRem(25px); 
+$H21: calcRem(21px);
+$H20: calcRem(20px);
+$H17: calcRem(17px);
+$H13: calcRem(13px);
