@@ -1,0 +1,15 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $BUTTON-GALLERY-COLOR;
+    font-family: $BASE-FONT-FAMILY;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: $H20;
+    font-weight: 300;
+    height: 50px;
+    width: 200px;
+    padding: 10px 20px;
+    border: none;
+}

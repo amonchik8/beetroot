@@ -11,9 +11,12 @@ input,
 button,
 textarea,
 select {
-  // font-family: sans-serif;
+  font-size: 16px;
+  font-family: $BASE-FONT-FAMILY;
 }
-
+body {
+  background-color: $BG-GALLERY-COLOR;
+}
 ul {
   list-style: none;
 }
@@ -25,3 +28,10 @@ a, button {
   display: inline-flex;
   text-decoration: none;
 }
+.container {
+  @include flex(center, center, column, wrap);
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 24px;
+  background-color: $BG-GALLERY-COLOR;
+} 
