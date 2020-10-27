@@ -1,20 +1,25 @@
 .card {
-    @include flex(center, stretch, row, wrap);
-    max-width: 400px;
-    height: 100px;
+    @include flex(space-between, center, row, nowrap);
+    width: 400px;
     background-color: $WHITE;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     &__name {
-        @include flex(flex-start, center); 
         @include text($H20, 700);
         line-height: 27px;
-        margin: 0 72px;
+        margin: 0 70px;
+        text-align: center;
+        &--domestic {
+        margin: 0 30px;
+        }
     }
     &__icon {
-        @include flex(flex-start, center);
-        border-left: 1px solid $BLACK;
-        border-color: $BORDER-COLOR;
-        padding: 26px 28px;
+        width: 47px;
+        height: 44px;
+    }
+    &__icon-wrapper {
+        @include flex(center, row, wrap);
+        border-left: 1px solid $BORDER-COLOR;
+        padding: 28px 26px;
     }
 }
 .card:hover {

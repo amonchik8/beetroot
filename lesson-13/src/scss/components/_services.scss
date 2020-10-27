@@ -1,5 +1,5 @@
 .services {
-    @include flex(space-between, center, row, wrap);
+    @include flex(space-between, center, row, nowrap);
     background-color: $BG-SERVICES-COLOR;
     min-height: 80vh;
 }
