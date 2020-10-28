@@ -1,0 +1,10 @@
+.title {
+    @include text($H90, 700, $WHITE);
+    line-height: 27px;
+    &__services {
+    position: relative;
+    right: 22px;
+    bottom: 330px;
+    z-index: 1;
+    }
+}
