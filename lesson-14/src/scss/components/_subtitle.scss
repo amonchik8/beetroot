@@ -1,0 +1,13 @@
+.subtitle {
+    @include text($H40, 700, #262626);
+    line-height: 27px;
+    margin-bottom: 34px;
+    &__description {
+    max-width: 542px;
+    @include text($H17, 300, #262626);
+    color: #262626;
+    line-height: 27px;
+    margin-bottom: 31px;
+    }
+
+}

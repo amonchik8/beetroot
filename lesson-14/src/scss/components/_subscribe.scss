@@ -1,0 +1,7 @@
+.subscribe {
+    background-image: url('/assets/images/subscribe-bg.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    @include flex(center, flex-start, column, wrap);
+    height: 500px;
+}

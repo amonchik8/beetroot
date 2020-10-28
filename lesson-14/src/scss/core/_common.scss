@@ -15,7 +15,7 @@ select {
   font-family: $BASE-FONT-FAMILY;
 }
 body {
-  background-color: $BG-GALLERY-COLOR;
+//  background-color: $BG-GALLERY-COLOR;
 }
 ul {
   list-style: none;
@@ -35,3 +35,7 @@ a, button {
   padding: 0 24px;
   background-color: $BG-GALLERY-COLOR;
 } 
+.content-container {
+  width: 1170px;
+  margin: 0 auto;
+}

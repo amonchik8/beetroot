@@ -12,4 +12,11 @@
     width: 200px;
     padding: 10px 20px;
     border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    &--gallery {
+        margin-bottom: 140px;
+    }
+    &--subscribe {
+        background: $BUTTON-SUBSCRIBE-COLOR;
+    }
 }

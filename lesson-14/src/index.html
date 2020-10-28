@@ -7,29 +7,42 @@
     <title>Document</title>
 </head>
 <body>
-   <section class="gallery container">
+   <section class="gallery">
+       <div class="container">
        <h2 class="title">Gallery</h2>
        <p class="title__description">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
            ut aliquip ex ea commodo consequat.</p>
            <div class="grid">
-               <div class="banner grid__item grid__item--large">
-                   <img class="banner__image" src="assets/images/1.png" alt="">
+               <div class="card grid__item grid__item--large">
+                <img class="card" src="assets/images/1.png" alt="">
                </div>
                <div class="card grid__item">
-                   <img class="card__image" src="assets/images/2.png" alt="">
+                <img class="card__image" src="assets/images/2.png" alt="">
                </div>
                <div class="card grid__item">
                 <img class="card__image" src="assets/images/3.png" alt="">
-            </div>
-            <div class="card grid__item grid__item--big">
+                </div>
+              <div class="card grid__item grid__item--big">
                 <img class="card__image" src="assets/images/4.png" alt="">
-            </div>
-            <div class="card grid__item grid__item--big">
+                 </div>
+                <div class="card grid__item grid__item--big">
                 <img class="card__image" src="assets/images/5.png" alt="">
             </div>
            </div>
-           <button class="button">VIEW MORE</button>
+           <button class="button button--gallery">VIEW MORE</button>
+       </div>
    </section>
+   <section class="subscribe">
+       <div class="content-container">
+       <h3 class="subtitle">Subscribe To Us</h3>
+       <p class="subtitle__description">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <form class="form" action="">
+        <input placeholder="Your email address..." class="form__input form__input--subscribe" type="email">
+        <button class="button button--subscribe">subscribe</button>
+        </form>
+        </div>
+       </section>
 </body>
 </html>
