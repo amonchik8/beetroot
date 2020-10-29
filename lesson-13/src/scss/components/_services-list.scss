@@ -1,4 +1,4 @@
-.menu {
+.services-list {
     @include flex(flex-start, flex-start, column, wrap);
     &__item:not(:last-of-type) {
         margin-bottom: 20px;

@@ -1,4 +1,4 @@
-.card {
+.services-card {
     @include flex(space-between, center, row, nowrap);
     width: 400px;
     background-color: $WHITE;
@@ -22,6 +22,6 @@
         padding: 28px 26px;
     }
 }
-.card:hover {
+.services-card:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }

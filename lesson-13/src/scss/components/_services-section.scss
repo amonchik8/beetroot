@@ -1,5 +1,5 @@
-.services {
+.services-section {
     @include flex(space-between, center, row, nowrap);
     background-color: $BG-SERVICES-COLOR;
-    min-height: 80vh;
+    padding: 100px 24px;
 }
