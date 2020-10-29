@@ -1,0 +1,22 @@
+.gallery-section {
+    background-color: $BG-GALLERY-COLOR;
+    padding: 100px 24px 120px;
+    &__container {
+    @include flex-col;
+    }
+    &__title {
+        align-self: center;
+        @include text($H90, 700, $FONT-COLOR);
+        margin-bottom: 28px;
+    }
+    &__description {
+        max-width: 577px;
+        @include text($H17, 300, $FONT-COLOR);
+        line-height: 1.6;
+        align-self: center;
+        margin-bottom: 47px;
+    }
+    &__button {
+        align-self: center;
+    }
+}

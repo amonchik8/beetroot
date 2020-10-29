@@ -1,0 +1,20 @@
+.subscribe-section {
+    background-image: url('/assets/images/subscribe-bg.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 145px 24px 163px;
+    &__container {
+    @include flex-col;
+    }
+    &__subtitle {
+        @include text($H40, 700, $FONT-COLOR);
+        line-height: 1.6;
+        margin-bottom: 34px;
+    }
+    &__description {
+        max-width: 542px;
+        @include text($H17, 300, $FONT-COLOR);
+        line-height: 1.6;
+        margin-bottom: 31px;
+    }
+}

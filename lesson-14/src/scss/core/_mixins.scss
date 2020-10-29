@@ -154,3 +154,10 @@ $screen-retina: 1660px;
     }
   }
 }
+@mixin hover () {
+  @include media {
+    &:hover {
+      @content;
+    }
+  }
+}

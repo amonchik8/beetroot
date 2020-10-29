@@ -1,22 +1,46 @@
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: $BUTTON-GALLERY-COLOR;
+    @include flex(center, center);
+    display: inline-flex;
+    cursor: pointer;
     font-family: $BASE-FONT-FAMILY;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: $H20;
-    font-weight: 300;
-    height: 50px;
-    width: 200px;
-    padding: 10px 20px;
+    line-height: 1.05;
+    @include text($H20, 300, $WHITE);
+    min-width: 200px;
+    white-space: nowrap;
+    padding: 17px 25px;
     border: none;
+    outline: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    &--gallery {
-        margin-bottom: 140px;
+    transition-property: background-color, box-shadow;
+    transition-timing-function: ease;
+    transition-duration: 0.2s;
+    @include hover() {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     }
-    &--subscribe {
-        background: $BUTTON-SUBSCRIBE-COLOR;
+    &--small {
+        min-width: 170px;
+    }
+    &--cayen {
+        @include media($screen-tablet) {
+        width: initial;
+        max-width: max-content;
+        width: 100%;
+        }
+        background-color: $cayen;
+        @include hover () {
+        background-color: lighten($cayen, 5%);
+        }
+        &:active {
+        background-color: darken($cayen, 5%);
+        }
+    }
+    &--green {
+        background-color: $green;
+        @include hover () {
+        background-color: lighten($green, 5%);
+        }
+        &:active {
+        background-color: darken($green, 5%);
+        }
     }
 }
