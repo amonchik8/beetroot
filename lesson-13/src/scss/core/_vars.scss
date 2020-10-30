@@ -1,0 +1,18 @@
+//Colors
+$BG-SERVICES-COLOR: #70bfff;
+$WHITE: #fff;
+$BLACK: #000;
+$BORDER-COLOR: #9d9d9d;
+
+//
+$base-font-size: 16px;
+
+//Font Sizes
+@function calcRem($size) {
+    $remSize: $size / $base-font-size;
+    @return #{$remSize}rem;
+}
+
+$H90: calcRem(90px);
+$H67: calcRem(67px);
+$H20: calcRem(20px);

@@ -1,0 +1,27 @@
+//Colors
+$LOVE-COLOR: #ff2b58;
+$LEFT-BORDER-COLOR: #355b82;
+$INPUT-COLOR: #7FE1E1;
+$INPUT-COLOR-FOCUS: #00C4C4;
+$FOOTER-COLOR: #262626;
+$FOOTER-TEXT-COLOR: #b9b9b9;
+$WHITE: #ffffff;
+//
+$base-font: 'Raleway';
+$base-font-size: 16px;
+
+//Font Sizes
+@function calcRem($size) {
+    $remSize: $size / $base-font-size;
+    @return #{$remSize}rem;
+}
+
+$H90: calcRem(90px);
+$H32: calcRem(32px); 
+$H25: calcRem(25px); 
+$H21: calcRem(21px);
+$H20: calcRem(20px);
+$H17: calcRem(17px);
+$H16: calcRem(16px);
+$H15: calcRem(15px);
+$H13: calcRem(13px);

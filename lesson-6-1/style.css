@@ -53,6 +53,13 @@ body {
     margin-right: auto;
     margin-bottom: 25px;
 }
+.checkbox-list__label {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
 .checkbox-list__features {
     color: var(--LIST-FEATURES-COLOR);
 }
@@ -86,13 +93,6 @@ body {
     text-align: center;
     padding: 13px 0;
 } 
-.checkbox-list__label {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-}
 .notation {
     font-size: 12px;
     color: var(--NOTATION-COLOR);

@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/ProximaNova-Regular.d19ec9bc.woff2') format('woff2'),
+        url('/ProximaNova-Regular.c0b5ae6d.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/ProximaNova-Light.9b038c22.woff2') format('woff2'),
+        url('/ProximaNova-Light.27767b54.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/ProximaNova-Bold.c138c956.woff2') format('woff2'),
+        url('/ProximaNova-Bold.df2beb52.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('/FuturaPT-Heavy.73899517.woff2') format('woff2'),
+        url('/FuturaPT-Heavy.a0c53f20.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --BG-COLOR: #464f54;
+  --H-COLOR: #181818;
+  --MENU-COLOR: #fbc02d;
+  --TITLE-COLOR: #767676;
+  --ELSE-COLOR: #8f8f8f;
+  --ICON-COLOR: #FDDF96;
+  --CONTAINER: 1060px;
+  --CONTENT-CONTAINER: 880px;
+  --PRETITLE-FONT: "Proxima Nova";
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--BG-COLOR);
+}
+
+.header {
+  display: flex;
+  background-color: var(--H-COLOR);
+  height: 187px;
+  padding-top: 65px;
+  padding-left: 50px;
+  align-items: center;
+  position: absolute;
+  top: 47px;
+  left: 720px;
+}
+
+.header-container {
+  width: 100vh;
+}
+
+.header-title {
+  color: var(--TITLE-COLOR);
+  font-family: var(--PRETITLE-FONT);
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+}
+
+.header-input {
+  background-color: var(--H-COLOR);
+  border: 0 solid var(--H-COLOR);
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  height: 40px;
+  font-size: 48px;
+  outline: none;
+}
+
+.header-separator {
+  margin-top: 18px;
+  border: 1px solid #8f8f8f;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-color: var(--MENU-COLOR);
+  height: 76px;
+  position: relative;
+  top: 55px;
+}
+
+.menu-list__item {
+  display: inline;
+  margin-left: 42px;
+}
+
+.main {
+  display: flex;
+  width: var(--CONTAINER);
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 149px;
+  z-index: -1;
+}
+
+.content-container {
+  width: var(--CONTENT-CONTAINER);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.main-pretitle {
+  margin-top: 202px;
+  margin-bottom: 47px;
+  color: var(--ELSE-COLOR);
+  font-family: var(--PRETITLE-FONT);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 6.72px;
+  text-transform: uppercase;
+}
+
+.main-title {
+  font-family: "Futura PT";
+  font-size: 78px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.main-posttitle {
+  color: var(--ELSE-COLOR);
+  font-family: Georgia;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 55px;
+}
+
+.coolstory {
+  font-family: Georgia;
+  font-size: 27px;
+  text-align: justify;
+  line-height: 40.38px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.coolstory:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+.coolstory-highlight {
+  font-style: italic;
+}
+
+.line {
+  border-left: 1.5px solid #cac8c4;
+  margin-left: 67px;
+  padding-left: 55px;
+}
+
+.text-use {
+  width: 28px;
+  height: 27px;
+  fill: var(--ICON-COLOR);
+}
+
+.text-use:hover {
+  width: 28px;
+  height: 27px;
+  fill: #ffffff;
+}
+
+.size-use {
+  width: 28px;
+  height: 27px;
+  fill: var(--ICON-COLOR);
+}
+
+.size-use:hover {
+  width: 28px;
+  height: 27px;
+  fill: #ffffff;
+}
+
+.photo-use {
+  width: 28px;
+  height: 27px;
+  fill: var(--ICON-COLOR);
+}
+
+.photo-use:hover {
+  width: 28px;
+  height: 27px;
+  fill: #ffffff;
+}
+
+.bold-use {
+  width: 28px;
+  height: 27px;
+  fill: var(--ICON-COLOR);
+}
+
+.bold-use:hover {
+  width: 28px;
+  height: 27px;
+  fill: #ffffff;
+}
+
+.italic-use {
+  width: 28px;
+  height: 27px;
+  fill: var(--ICON-COLOR);
+}
+
+.italic-use:hover {
+  width: 28px;
+  height: 27px;
+  fill: #ffffff;
+}
+
+.underline-use {
+  width: 28px;
+  height: 27px;
+  fill: var(--ICON-COLOR);
+}
+
+.underline-use:hover {
+  width: 28px;
+  height: 27px;
+  fill: #ffffff;
+}
+
+.justify-use {
+  width: 28px;
+  height: 27px;
+  fill: var(--ICON-COLOR);
+}
+
+.justify-use:hover {
+  width: 28px;
+  height: 27px;
+  fill: #ffffff;
+}
+
+.left-use {
+  width: 28px;
+  height: 27px;
+  fill: var(--ICON-COLOR);
+}
+
+.left-use:hover {
+  width: 28px;
+  height: 27px;
+  fill: #ffffff;
+}
+
+.center-use {
+  width: 28px;
+  height: 27px;
+  fill: var(--ICON-COLOR);
+}
+
+.center-use:hover {
+  width: 28px;
+  height: 27px;
+  fill: #ffffff;
+}
+
+.right-use {
+  width: 28px;
+  height: 27px;
+  fill: var(--ICON-COLOR);
+}
+
+.right-use:hover {
+  width: 28px;
+  height: 27px;
+  fill: #ffffff;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */
