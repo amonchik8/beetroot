@@ -132,7 +132,7 @@ $screen-retina: 1660px;
     @content;
   }
 }
-@mixin padding-hack($padding: 50%, $size: contain, $dev: false) {
+@mixin padding-hack($padding: 50%, $size: cover, $dev: false) {
   position: relative;
   height: 0;
   padding-bottom: $padding;

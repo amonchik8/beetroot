@@ -1,6 +1,5 @@
 .button {
     @include flex(center, center);
-    display: inline-flex;
     cursor: pointer;
     font-family: $BASE-FONT-FAMILY;
     line-height: 1.05;
@@ -8,8 +7,6 @@
     min-width: 200px;
     white-space: nowrap;
     padding: 17px 25px;
-    border: none;
-    outline: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     transition-property: background-color, box-shadow;
     transition-timing-function: ease;

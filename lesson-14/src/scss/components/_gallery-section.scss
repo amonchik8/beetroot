@@ -1,6 +1,6 @@
 .gallery-section {
     background-color: $BG-GALLERY-COLOR;
-    padding: 100px 24px 120px;
+    padding: 100px 0 120px;
     &__container {
     @include flex-col;
     }
