@@ -1,0 +1,16 @@
+.form {
+    display: flex; 
+    &__input {
+    height: 50px;
+    padding: 20px;
+    border: none;
+    line-height: 25px;
+    outline: none;
+    &--subscribe-section {
+        @include text($H15, 300, $FONT-COLOR);
+        border: 1px solid $FONT-COLOR;
+        width: 570px;
+        margin-right: 30px;
+        }
+    }
+}
