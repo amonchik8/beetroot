@@ -3,11 +3,11 @@
     &__title {
         text-transform: uppercase;
         @include text($H17, 700);
-        line-height: 25px;
+        line-height: 1.5;
     }
     &__description {
         @include text($H20, 400);
-        line-height: 25px;
+        line-height: 1.25;
     }
     &__description:not(:last-of-type) {
         margin-bottom: 15px;

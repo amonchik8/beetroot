@@ -3,16 +3,16 @@
     margin: 0;
     padding: 0;
 }
-body, button, h1, h2, h3, button {
+body, button, h1, h2, h3, button, textarea {
     font-family: $base-font;
 
 }
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
+    
 }
 body {
-    min-height: 100vh;
     @include flex(flex-start, stretch, column);
     font-size: $base-font-size;
 }

@@ -1,6 +1,5 @@
 .form {
     @include flex(flex-start, stretch, column);
-    margin-right: 170px;
     max-width: 500px;
     width: 100%;
     &__input { 
@@ -16,18 +15,32 @@
         transition-duration: 0.4s;
         transition-timing-function: ease;
         @include text($H15, 700, $WHITE);
-        line-height: 25px;
+        line-height: 1.66;
         outline: none;
-        &--large {
-            max-height: 250px;
-            height: 100vh;
-            flex-grow: 1;
-        }
-    }
-    &__input:not(:last-of-type) {
         margin-bottom: 15px;
     }
     &__input:focus {
+        border-left: 5px solid $LEFT-BORDER-COLOR;
+        background-color: $INPUT-COLOR-FOCUS;
+    }
+    &__textarea {
+        @include placeholder {
+            @include text($H15, 400, $WHITE);
+        }
+        min-height: 250px;
+        background-color: rgba(0, 196, 196, 0.5);
+        border: none;
+        border-left: 5px solid transparent;
+        transition-property: border-color;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+        @include text($H15, 700, $WHITE);
+        line-height: 1.66;
+        outline: none;  
+        padding: 20px;
+        resize: none;
+    }
+    &__textarea:focus {
         border-left: 5px solid $LEFT-BORDER-COLOR;
         background-color: $INPUT-COLOR-FOCUS;
     }
