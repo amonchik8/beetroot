@@ -1,20 +1,27 @@
-let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130
+"use strict";
+
+const car = {
+  Manufacturer: 'Toyota',
+  Model: 'Supra',
+  Year: 2004,
+  "Average speed": 100,
 };
 
-function isEmpty(obj) {
-for (let key in obj) {
-  return false;
-}
-return true;
-}
+function getInfo(obj) {
+  for (let key in obj) {
+    alert( `${key}: ${obj[key]}`);
+  };
+};
 
-if (isEmpty(salaries)) {
-  sum = 0
-} else {
-  sum = salaries.Ann + salaries.John + salaries.Pete; 
-}
-
-console.log(sum);
+function getTime(s, v) {
+  let t = s / v;
+  for (let i = 1; i <= t; i++) {
+    if (i % 5 === 0 ){
+      t += 1; 
+    };
+  };
+  return t;
+};
+const s = 600;
+const t = getTime(s, car["Average speed"]);
+alert(`Время для преодоления расстояния: ${t} часов`);
