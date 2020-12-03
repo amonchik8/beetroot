@@ -1,10 +1,12 @@
+"use strict";
+
 // ----------------------------------------------1
 // function compare(a, b) {
-//    return a < b ? -1 :
-//     b < a ? 1 :
-//     0;
+//     if (a < b)  return -1
+//     else if (a > b) return 1
+//     else return 0;
 // }
-// console.log(compare(3,2));
+// console.log(compare(3, 2));
 
 // ----------------------------------------------2
 // function factorial(x) {
@@ -25,30 +27,27 @@
 // function conka (a, b, c) {
 //     return Number(String(a) + b + c);
 // }
-// let x = conka(1, 4, 9);
-// console.log(x);
+// console.log(conka(1, 3, 9));
 
 // ----------------------------------------------4
 // function square(a, b = a) {
 //     return a * b;
 // }
-// let s = square(4, 5);
-// console.log(s);
+// console.log(square(4));
 
 // ----------------------------------------------5
-//  function soversh(i) {
-//     return (i % 9 == 1 || i == 6 ) ? true : false; 
+// function isSoversh(i) {
+//     return i % 9 === 1 || i === 6  ? true : false; 
 // }
-//  let x = soversh(28);
-//  console.log(x);
+//  console.log(isSoversh(28));
 
 // ----------------------------------------------6
-// function soversh(a) {
-//     return (a % 9 == 1 || a == 6 ) ? true : false; 
+//function isSoversh(i) {
+//     return i % 9 === 1 || i === 6  ? true : false; 
 // }
 // function searchSoversh(a, b) {
 //     while (a <= b) {
-//     x = soversh(a);
+//     let x = isSoversh(a);
 //     if (x) console.log(a);
 //     a++;
 //     }
@@ -56,53 +55,52 @@
 // searchSoversh(1, 500);
 
 // ----------------------------------------------7
-// function time(hour, min = '00', sec = '00') {
-//     if (hour < 9 && hour !==  '00') hour = '0' + hour;
-//     if (min < 9 && min !== '00') min = '0' + min;
-//     if (sec < 9 && sec !== '00') sec = '0' + sec;
-//     alert(`«${hour}:${min}:${sec}»`);
+// function to2DigitTime(hour, min = '00', sec = '00') {
+//     if (hour < 9 && hour !==  '00') hour = `0${hour}`;
+//     if (min < 9 && min !== '00') min = `0${min}`;
+//     if (sec < 9 && sec !== '00') sec = `0${sec}`;
+//     console.log(`«${hour}:${min}:${sec}»`);
 // }
-// time(17, 1, 25)
+// to2DigitTime(17, 1, 2)
 
 // ----------------------------------------------8
-// function time(hour, min, sec) {
-//     let s =sec + (min * 60) + (hour * 3600);
+// function toSec(hour, min, sec) {
+//     const s =sec + (min * 60) + (hour * 3600);
 //     return s;
 // }
-// s = time(1, 0, 0);
-// console.log(s);
+// console.log(toSec(0, 2, 0));
 
 // ----------------------------------------------9
-// function time(sec) {
-//    hour = Math.floor(sec / 3600);
-//     min = Math.floor(sec / 60) - (hour * 60);
+// function toFullTime(sec) {
+//     let hour = Math.floor(sec / 3600);
+//     let min = Math.floor(sec / 60) - (hour * 60);
 //     sec = sec % 60;
-//     if (hour < 9) hour = '0' + hour;
-//     if (min < 9) min = '0' + min;
-//     if (sec < 9) sec = '0' + sec;
+//     if (hour < 9) hour = `0${hour}`;
+//     if (min < 9) min = `0${min}`;
+//     if (sec < 9) sec = `0${sec}`;
 //    return(console.log(`«${hour}:${min}:${sec}»`));
 // }
-// time(4000);
+// toFullTime(4000);
 
 // ----------------------------------------------10
 function toSec(hour, min, sec) {
     let s =sec + (min * 60) + (hour * 3600);
     return s;
 }
-function toDate(sec) {
-   hour = Math.floor(sec / 3600);
-    min = Math.floor(sec / 60) - (hour * 60);
-    sec = sec % 60;
-    if (hour < 9) hour = '0' + hour;
-    if (min < 9) min = '0' + min;
-    if (sec < 9) sec = '0' + sec;
-   return(console.log(`«${hour}:${min}:${sec}»`));
+function toFullTime(sec) {
+        let hour = Math.floor(sec / 3600);
+        let min = Math.floor(sec / 60) - (hour * 60);
+        sec = sec % 60;
+        if (hour < 9) hour = `0${hour}`;
+        if (min < 9) min = `0${min}`;
+        if (sec < 9) sec = `0${sec}`;
+       return(console.log(`«${hour}:${min}:${sec}»`));
 }
 function calcDataChange(firstHour, firstMin, firstSec, secondHour, secondMin, secondSec) {
-    firstСonvertSeconds = toSec(firstHour, firstMin, firstSec);
-    secondСonvertSeconds = toSec(secondHour, secondMin, secondSec);
-    changeInSeconds = secondСonvertSeconds - firstСonvertSeconds;
-    dataChange = toDate(changeInSeconds);
-    return(dataChange);
+   let firstСonvertSeconds = toSec(firstHour, firstMin, firstSec);
+   let secondСonvertSeconds = toSec(secondHour, secondMin, secondSec);
+   let changeInSeconds = secondСonvertSeconds - firstСonvertSeconds;
+   let dataChange = toFullTime(changeInSeconds);
+   return(dataChange);
 }
-calcDataChange(13, 12, 12, 16, 20, 13);
+calcDataChange(13, 12, 12, 17, 20, 13);
