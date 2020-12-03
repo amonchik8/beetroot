@@ -1,20 +1,31 @@
+"use strict";
+
 function calc(x, y, z) {
-x = +prompt(`Введите 1-ое число`, "");
-y = +prompt(`Введите 2-ое число`, "");
-z = prompt(`Введите знак`, "");
-if (z === '*') 
-rezult = x * y
-else if (z === '/')
-rezult = x / y
-else if (z === '+')
-rezult = x + y
-else 
-rezult = x - y;
-q = confirm(`Результат: ${rezult}. Хотите продолжить?`)
-while (q) calc(x, y, z);
+    firstNum = +prompt(`Введите 1-ое число`, "");
+    secondNum = +prompt(`Введите 2-ое число`, "");
+    sign = prompt(`Введите знак`, "");
+
+    if (sign === '*') {
+        result = firstNum * secondNum
+    } else if (sign === '/') {
+        result = firstNum / secondNum
+    } else if (sign === '+') {
+        result = firstNum + secondNum
+    } else {
+        result = firstNum - secondNum;}
+
+    if (!isNaN(result)) {
+        flag = confirm(`Результат: ${result}. Хотите продолжить?`);
+    } else {
+        flag = confirm(`Некорректные данные, введите числа. Хотите продолжить?`);
+    };
+    while (flag) {calc(firstNum, secondNum, sign);
+        };
 }
 
-let x = 0;
-let y = 0;
-let z = 0;
-rezult = calc(x, y, z);
+let firstNum = 0;
+let secondNum = 0;
+let sign = 0;
+let flag = 0;
+let result = 0;
+result = calc(firstNum, secondNum, sign);

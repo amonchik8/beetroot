@@ -1,6 +1,9 @@
-function delitel(a) {
+"use strict";
+
+function getDivNumber(a) {
     let x = 0;
-    for (i = 1; i <= a; i++) {
+
+    for (let i = 1; i <= a; i++) {
         if (a % i === 0) {
         x = i;
         console.log(x);
@@ -8,7 +11,10 @@ function delitel(a) {
     }
 }
 
-a = +prompt(`Введите число`, "");
-if (isNumber(a)) 
-    delitel(a)
-else alert(`Недопусимые символы! Введите число.`);
+const a = +prompt(`Введите число`, "");
+
+if (isNumber(a)) {
+    getDivNumber(a)
+} else {
+    alert(`Недопусимые символы! Введите число.`);
+};

@@ -1,10 +1,13 @@
-x = prompt(`Введите число`, "");
-y = prompt(`Введите на сколько цифр его сдвинуть`, "");
-arr = x.split('');
-for (i = 0; i < y ; i++) {
+"use strict";
+
+const num = prompt(`Введите число`, "");
+const shift = prompt(`Введите на сколько цифр его сдвинуть`, "");
+const arr = num.split('');
+let i = 0;
+for (i = 0; i < shift ; i++) {
     arr.push(arr[i]);
 }
-for (i = 0; i < y ; i++) {
+for (i = 0; i < shift ; i++) {
     arr.shift(arr[i]);
 }
 let result = 0;

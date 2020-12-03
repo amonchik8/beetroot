@@ -1,4 +1,6 @@
-function theBiggestDelitel(a, b) {
+"use strict";
+
+function theBiggestDiv(a, b) {
     let x = 0;
     let i = 1;
     while (i <= a) {
@@ -9,12 +11,13 @@ function theBiggestDelitel(a, b) {
     return x;
 }
 
-a = +prompt(`Введите число`, "");
-b = +prompt(`Введите число`, "");
+const a = +prompt(`Введите число`, "");
+const b = +prompt(`Введите число`, "");
 let delitel = 0;
-if (isNumber(a) && isNumber(b)) {
-    delitel = theBiggestDelitel(a, b);
+
+if (isNumber(a) && isNumber(b) ) {
+    delitel = theBiggestDiv(a, b);
     alert(`Наибольший общий делитель = ${delitel}`);
 } else {
     alert(`Недопусимые символы! Введите числа.`);
-    }
+    };
