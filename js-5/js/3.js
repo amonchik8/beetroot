@@ -76,8 +76,9 @@ function changeSec(obj, value) {
 
 
 
-changeSec(time, 4000 );
-
+changeSec(time, 897876500 );
+// 897876500
+// 4000
 
 
 
