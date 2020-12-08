@@ -15,9 +15,9 @@ const styles = [
     },
 ];
 
-function getText(arr, text) {
+function showText(arr, text) {
     document.write(`<p style ="${styles[0].name}${styles[0].meaning}${styles[1].name}${styles[1].meaning}${styles[2].name}${styles[2].meaning}">${text}</p>`);
     
 };
 
-getText(styles, "Текст");
+showText(styles, "Текст");
