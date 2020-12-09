@@ -1,23 +1,23 @@
 "use strict";
 
-function theBiggestDiv(a, b) {
-    let x = 0;
+function theBiggestDiv(firstNumber, secondNumber) {
+    let result = 0;
     let i = 1;
-    while (i <= a) {
-        if (a % i === 0 && b % i === 0)
-        x = i;
+    while (i <= firstNumber) {
+        if (firstNumber % i === 0 && secondNumber % i === 0)
+        result = i;
         i++;
     }
-    return x;
+    return result;
 }
 
-const a = +prompt(`Введите число`, "");
-const b = +prompt(`Введите число`, "");
-let delitel = 0;
+const firstNumber = +prompt(`Введите число`, "");
+const secondNumber = +prompt(`Введите число`, "");
+let divider = 0;
 
-if (isNumber(a) && isNumber(b) ) {
-    delitel = theBiggestDiv(a, b);
-    alert(`Наибольший общий делитель = ${delitel}`);
+if (isNumber(firstNumber) && isNumber(secondNumber) ) {
+    divider = theBiggestDiv(firstNumber, secondNumber);
+    alert(`Наибольший общий делитель = ${divider}`);
 } else {
     alert(`Недопусимые символы! Введите числа.`);
     };

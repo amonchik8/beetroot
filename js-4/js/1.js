@@ -1,23 +1,23 @@
 "use strict";
  
- function sumInDiapazon(i, n) {
-    let s = 0;
+ function sumInDiapazon(firstValue, secondValue) {
+    let sum = 0;
     
-    while (i <= n) {
-    s = s + i;
-    i++;
+    while (firstValue <= secondValue) {
+    sum = sum + firstValue;
+    firstValue++;
     }
 
-    if (isNumber(i) === true && isNumber(n) === true) {
-        return s;
+    if (isNumber(firstValue) === true && isNumber(secondValue) === true) {
+        return sum;
     } else {
         return alert(`Недопустимый диапазон! Введите числа.`);
         };
 };
 
-const i = +prompt(`Введите число (от):`, "");
-const n = +prompt(`Введите число (до):`, "");
-let sum = sumInDiapazon (i, n);
+const firstValue = +prompt(`Введите число (от):`, "");
+const secondValue = +prompt(`Введите число (до):`, "");
+let sum = sumInDiapazon (firstValue, secondValue);
 
 if (sum !== undefined) {
     alert(`Сумма всех чисел в заданном Вами диапазоне = ${sum}`);

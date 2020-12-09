@@ -1,20 +1,20 @@
 "use strict";
 
-function getDivNumber(a) {
-    let x = 0;
+function getDivNumber(number) {
+    let divider = 0;
 
-    for (let i = 1; i <= a; i++) {
-        if (a % i === 0) {
-        x = i;
-        console.log(x);
+    for (let i = 1; i <= number; i++) {
+        if (number % i === 0) {
+        divider = i;
+        alert(divider);
         }
     }
 }
 
-const a = +prompt(`Введите число`, "");
+const number = +prompt(`Введите число`, "");
 
-if (isNumber(a)) {
-    getDivNumber(a)
+if (isNumber(number)) {
+    getDivNumber(number)
 } else {
     alert(`Недопусимые символы! Введите число.`);
 };

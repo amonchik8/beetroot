@@ -1,8 +1,8 @@
 "use strict";
 
-function getNumberOfDigits(a) {
+function getNumberOfDigits(number) {
     let count = 0;
-    let result = a.split('');
+    let result = number.split('');
 
     for (let i = 0; i < result.length; i++) {
         if (isNumber(Number(result[i])))
@@ -10,6 +10,6 @@ function getNumberOfDigits(a) {
     }
     return count;
 }
-const a = prompt(`Введите число`, ""); 
-const result = getNumberOfDigits(a);
-console.log(`Количество цифр в числе ${result}`);
+const number = prompt(`Введите число`, ""); 
+const result = getNumberOfDigits(number);
+alert(`Количество цифр в числе ${result}`);
