@@ -4,7 +4,7 @@ const car = {
   Manufacturer: 'Toyota',
   Model: 'Supra',
   Year: 2004,
-  "Average speed": 100,
+  "averageSpeed": 100,
 };
 
 function getInfo(obj) {
@@ -13,15 +13,15 @@ function getInfo(obj) {
   };
 };
 
-function getTime(s, v) {
-  let t = s / v;
-  for (let i = 1; i <= t; i++) {
+function getTime(distance, speed) {
+  let time = distance / speed;
+  for (let i = 1; i <= time; i++) {
     if (i % 5 === 0 ){
-      t += 1; 
+      time += 1; 
     };
   };
-  return t;
+  return time;
 };
-const s = 600;
-const t = getTime(s, car["Average speed"]);
-alert(`Время для преодоления расстояния: ${t} часов`);
+const distance = 800;
+const time = getTime(distance, car["averageSpeed"]);
+alert(`Время для преодоления расстояния: ${time} часов`);

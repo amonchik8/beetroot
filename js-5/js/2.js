@@ -1,97 +1,84 @@
 "use strict";
 
 const firstFraction = {
-    numerator : 20,
-    denumerator : 16,
+  numerator: 2,
+  denumerator: 4,
 };
 
 const secondFraction = {
-    numerator : 4,
-    denumerator : 7,
+  numerator: 1,
+  denumerator: 4,
 };
 
-function additionFraction(firstObject, secondObject) {
+const isNumber = (value) => !Number.isNaN(Number(value)) && !!value;
 
-    if (firstObject.denumerator !== secondObject.denumerator) {
-        firstObject.numerator = firstObject.numerator * secondObject.denumerator;
-        secondObject.numerator = secondObject.numerator * firstObject.denumerator;
-        firstObject.denumerator = firstObject.denumerator * secondObject.denumerator;
-        secondObject.denumerator = firstObject.denumerator;
-    };
-        numeratorAdd = firstObject.numerator + secondObject.numerator;
-        denumeratorAdd = firstObject.denumerator;   
-    return {
-        numeratorAdd : numeratorAdd,
-        denumeratorAdd : denumeratorAdd, 
-    };
+const isValidFraction = (fraction) => {
+  return (
+    typeof fraction === "object" &&
+    fraction !== null &&
+    isNumber(fraction.numerator) &&
+    isNumber(fraction.denumerator)
+  );
 };
 
-function subtractionFraction(firstObject, secondObject) {
-
-    if (firstObject.denumerator !== secondObject.denumerator) {
-        firstObject.numerator = firstObject.numerator * secondObject.denumerator;
-        secondObject.numerator = secondObject.numerator * firstObject.denumerator;
-        firstObject.denumerator = firstObject.denumerator * secondObject.denumerator;
-        secondObject.denumerator = firstObject.denumerator;
+const reductionFraction = (obj) => {
+    const getLessNumber = (a, b) => {
+      return a < b ? a : b;
     };
-        numeratorSub= firstObject.numerator - secondObject.numerator;
-        denumeratorSub= firstObject.denumerator;   
-    return {
-        numeratorSub : numeratorSub,
-        denumeratorSub: denumeratorSub,
-    };
-};
-
-function multiplicationFraction(firstObject, secondObject) {
-    numeratorMult = firstObject.numerator * secondObject.numerator;
-    denumeratorMult = firstObject.denumerator * secondObject.denumerator;   
-    return {
-        numeratorMult : numeratorMult,
-        denumeratorMult : denumeratorMult, 
-    };
-};
-
-function divisionFraction(firstObject, secondObject) {
-    numeratorDiv = firstObject.numerator * secondObject.denumerator;
-    denumeratorDiv = firstObject.denumerator * secondObject.numerator;   
-    return {
-    numeratorDiv : numeratorDiv,
-    denumeratorDiv : denumeratorDiv, 
-    };
-};
-
-function reductionFraction (obj) {
-    function getLessNumber(a, b) {
-        return (a < b) ? a : b;
-    };
-
-    let lessNumber = getLessNumber(obj.numerator, obj.denumerator);
-    while (lessNumber > 1) {
-        if (obj.numerator % lessNumber === 0 && obj.denumerator % lessNumber === 0 ) {
-            numeratorRed = obj.numerator /= lessNumber;
-            denumeratorRed = obj.denumerator /= lessNumber;  
+    let divider = getLessNumber(obj.numerator, obj.denumerator);
+    while (divider > 1) {
+      if (obj.numerator % divider === 0 && obj.denumerator % divider === 0)
+        return {
+          numerator: obj.numerator / divider,
+          denumerator: obj.denumerator / divider,
         };
-        lessNumber--; 
-    };
+      divider--;
+    }
     return {
-        numeratorRed : numeratorRed,
-        denumeratorRed : denumeratorRed, 
-        };
+      numerator: obj.numerator,
+      denumerator: obj.denumerator,
+    };
+  };
+
+const additionFraction = (a, b) => {
+  if (!isValidFraction(a) || !isValidFraction(b))
+    return alert(`Некорректная дробь`);
+  return reductionFraction({
+    numerator: a.numerator * b.denumerator + b.numerator * a.denumerator,
+    denumerator: a.denumerator * b.denumerator,
+  });
 };
 
-let numeratorSum = 0;
-let denumeratorSum = 0;
-let numeratorSub = 0;
-let denumeratorSub = 0;
-let numeratorMult = 0;
-let denumeratorMult = 0;
-let numeratorDiv = 0;
-let denumeratorDiv = 0;
-let numeratorRed = 0; 
-let denumeratorRed = 0;
+const subtractionFraction = (a, b) => {
+  if (!isValidFraction(a) || !isValidFraction(b))
+    return alert(`Некорректная дробь`);
+    const numerator = a.numerator * b.denumerator - b.numerator * a.denumerator;
+  return reductionFraction({
+    numerator: numerator,
+    denumerator: numerator ? a.denumerator * b.denumerator : 0,
+  });
+};
 
+const multiplicationFraction = (a, b) => {
+  if (!isValidFraction(a) || !isValidFraction(b))
+    return alert(`Некорректная дробь`);
+  return reductionFraction({
+    numerator: a.numerator * b.numerator,
+    denumerator: a.denumerator * b.denumerator,
+  });
+};
 
-const result = reductionFraction(firstFraction);
-alert(`${result.numeratorRed}\n
--
-${result.denumeratorRed}`);
+const divisionFraction = (a, b) => {
+  if (!isValidFraction(a) || !isValidFraction(b))
+    return alert(`Некорректная дробь`);
+  return reductionFraction({
+    numerator: a.numerator * b.denumerator,
+    denumerator: a.denumerator * b.numerator,
+  });
+};
+
+console.log(additionFraction(firstFraction, secondFraction));
+console.log(subtractionFraction(firstFraction, secondFraction));
+console.log(multiplicationFraction(firstFraction, secondFraction));
+console.log(divisionFraction(firstFraction, secondFraction));
+console.log(reductionFraction(firstFraction));
