@@ -33,7 +33,7 @@ function printOnScreen() {
 function sumBuy(arr) {
   let price = arr.map((item) => item.price * item.amount);
   let sum = 0;
-  price.forEach(function (item, index, array) {
+  price.forEach(function (item) {
     sum += item;
   });
   return sum;
@@ -49,7 +49,7 @@ function getMostExpensiveBuy(arr) {
 function sumAmout(arr) {
   let amoutArr = arr.map((item) => item.amount);
   let amout = 0;
-  amoutArr.forEach(function (item, index, array) {
+  amoutArr.forEach(function (item) {
     amout += item;
   });
   return amout;
