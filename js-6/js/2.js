@@ -3,8 +3,8 @@
 let check = [
   {
     name: "milk",
-    amount: 1,
-    price: 20,
+    amount: 2,
+    price: 40,
   },
   {
     name: "beer",
@@ -19,25 +19,21 @@ let check = [
 ];
 
 /////1
-function printOnScreen() {
-  let i = 0;
-  let arr = [];
-  for (i = 0; i < check.length; i++) {
-    arr.push(check[i].name, check[i].amount, check[i].price);
-  };
-  let str = arr.join(" ");
+function printOnScreen(arr) {
+  let resultArr = [];
+  arr.forEach((item, index, arr) => {
+    resultArr.push(arr[index].name, arr[index].amount, arr[index].price);
+  });
+  const str = resultArr.join(" ");
   alert(str);
-};
+}
 
 /////2
-function sumBuy(arr) {
-  let price = arr.map((item) => item.price * item.amount);
-  let sum = 0;
-  price.forEach(function (item) {
-    sum += item;
-  });
-  return sum;
+const sumBuy = (arr) => {
+  return arr.reduce(
+    (sum, item, index, array) => sum + arr[index].price * arr[index].amount, 0);
 };
+
 
 /////3
 function getMostExpensiveBuy(arr) {
@@ -46,13 +42,9 @@ function getMostExpensiveBuy(arr) {
 };
 
 /////4
-function sumAmout(arr) {
-  let amoutArr = arr.map((item) => item.amount);
-  let amout = 0;
-  amoutArr.forEach(function (item) {
-    amout += item;
-  });
-  return amout;
+const sumAmout =(arr) => {
+  return arr.reduce(
+    (sum, item, index, array) => sum + arr[index].amount, 0);
 };
 
 function averageCost(arr) {
