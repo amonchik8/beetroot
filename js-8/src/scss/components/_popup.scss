@@ -1,0 +1,19 @@
+.popup {
+  @include flex(center, center, column);
+  text-align: center;
+  display: none;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #f9e6ba;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 24px;
+  &__title {
+    font-family: sans-serif;
+    margin-bottom: 10px;
+  }
+}
+.popup._active {
+  display: block;
+}

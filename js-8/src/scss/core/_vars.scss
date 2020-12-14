@@ -1,0 +1,27 @@
+//Colors
+$WHITE: #fff;
+$BLACK: #000;
+
+// Fonts
+// $BASE-FONT: ;
+$base-font-size: 16px;
+
+//Font Sizes
+@function calcRem($size) {
+    $remSize: $size / $base-font-size;
+    @return #{$remSize}rem;
+}
+
+$H90: calcRem(90px);
+$H67: calcRem(67px);
+$H60: calcRem(60px);
+$H48: calcRem(48px);
+$H40: calcRem(40px);
+$H32: calcRem(32px); 
+$H25: calcRem(25px); 
+$H21: calcRem(21px);
+$H20: calcRem(20px);
+$H17: calcRem(17px);
+$H16: calcRem(16px);
+$H15: calcRem(15px);
+$H13: calcRem(13px);
