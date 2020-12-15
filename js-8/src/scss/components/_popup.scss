@@ -1,4 +1,7 @@
 .popup {
+  &__wrapper {
+    margin-right: 100px;
+  }
   @include flex(center, center, column);
   text-align: center;
   display: none;

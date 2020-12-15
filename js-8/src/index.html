@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="scss/style.scss">
 </head>
 <body>
+    <div class="popup__wrapper">
     <ol id="list">
         <li></li>
         <li></li>
@@ -18,13 +19,32 @@
         <li></li>
     </ol>
 
-    <button id="button" class="button">Open</button>
+    <button id="popup-button" class="button">Open</button>
     <div id="popup" class="popup">
         <h2 class="popup__title">Hello, world!</h2>
         <button class="button">Close</button>
     </div>
+</div>
+<div>
+    <div id="lights" class="lights">
+        <ul class="lights__list">
+            <li class="lights__colors">
+                <div id="red" class="lights__colors lights__colors--red"></div>
+            </li class="lights__colors">
+            <li>
+                <div id="yellow" class="lights__colors lights__colors--yellow"></div>
+            </li class="lights__colors">
+            <li>
+                <div id="green" class="lights__colors lights__colors--green"></div>
+            </li>
+        </ul>
+        <button id="button-red" class="button button--lights button--red">Switch</button>
+        <button id="button-yellow" class="button button--lights button--yellow">Switch</button>
+        <button id="button-green" class="button button--lights button--green">Switch</button>
+    </div>
     <script src ="js/task1.js"></script>
     <script src ="js/task2.js"></script>
     <script src ="js/task3.js"></script>
+</div>
 </body>
 </html>

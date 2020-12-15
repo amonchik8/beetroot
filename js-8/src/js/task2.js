@@ -1,6 +1,6 @@
 "use strict";
 
-const $button = document.getElementById("button");
+const $button = document.getElementById("popup-button");
 const $popup = document.getElementById("popup");
 const $popupCloseButton = document.querySelector(".popup button");
 
