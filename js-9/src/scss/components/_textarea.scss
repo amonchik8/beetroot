@@ -1,0 +1,11 @@
+.textarea {
+    margin: 20px;
+    width: 430px;
+    height: 200px;
+    resize: none;
+    display: none;
+    outline: none;
+}
+.textarea._visible {
+    display: block;
+}
