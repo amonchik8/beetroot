@@ -1,10 +1,15 @@
 .textarea {
-    margin: 20px;
-    width: 430px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #a4c2a8;
+    box-shadow: 2px 2px 2px black;
+    padding: 20px;
+    width: 450px;
     height: 200px;
     resize: none;
     display: none;
     outline: none;
+    border: none;
 }
 .textarea._visible {
     display: block;

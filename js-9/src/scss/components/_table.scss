@@ -1,0 +1,31 @@
+.table {
+  margin-top: 40px;
+  font-family: sans-serif;
+  font-size: 14px;
+  background: white;
+  max-width: 70%;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  border: 2px solid #6678b1;
+  &__title {
+    color: #039;
+    padding: 10px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color:  lighten($color:  #6678b1, $amount: 30%)
+    }
+    &:active {
+      background-color:  lighten($color:  #6678b1, $amount: 20%)
+    }
+    &:not(:last-child) {
+      border-right: 2px solid #6678b1;
+    }
+  }
+  &__cell {
+    color: #669;
+    padding: 9px 8px;
+    border: 2px solid #6678b1;
+  }
+}

@@ -16,6 +16,11 @@ select {
   font-family: sans-serif;
 }
 
+body {
+  @include flex(center, center, column);
+  background-color: #41C184;
+}
+
 ul {
   list-style: none;
 }
