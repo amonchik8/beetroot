@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel ./src/index.html --no-cache --open",
     "start": "npm run dev",
-    "build": "parcel build ./src/index.html --public-url ./ --no-cache",
+    "build": "parcel build ./src/index.html --public-url ./ --no-cache -d build",
     "server": "json-server --watch db.json"
   },
   "keywords": [],
