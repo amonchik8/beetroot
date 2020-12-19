@@ -1,0 +1,19 @@
+.textdiv {
+    margin-top: 30px;
+    display: flex;
+    padding: 20px;
+    width: 450px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #a4c2a8;
+    box-shadow: 2px 2px 2px black;
+    &__description {
+        margin-left: 40px;
+    }
+    &__wrapper {
+        @include flex(center, center);
+    }
+}
+.textdiv._hide {
+    display: none;
+}
