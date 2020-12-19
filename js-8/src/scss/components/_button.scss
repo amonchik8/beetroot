@@ -1,0 +1,36 @@
+.button {
+  margin-top: 30px;
+  background-color: #f2cd75;
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  &--lights {
+    padding: 10px;
+  }
+  &--red{
+    display: block;
+  }
+  &--red._active{
+    display: none;
+  }
+  &--yellow{
+    display: none;
+  }
+  &--yellow._active{
+    display: block;
+  }
+  &--green{
+    display: none;
+  }
+  &--green._active{
+    display: block;
+  }
+  &:hover {
+    background-color: lighten(#f2cd75, 2%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  &:active {
+    background-color: darken(#f2cd75, 5%);
+  }
+}
