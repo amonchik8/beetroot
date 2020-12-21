@@ -1,0 +1,11 @@
+.main {
+  @include flex(center, center, column);
+  padding: 60px 0 130px;
+  &__subtitle {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3.6px;
+    text-align: center;
+    @include text(18px, 600, #303030);
+  }
+}

@@ -1,0 +1,12 @@
+@import './core/vars';
+@import './core/mixins';
+@import './core/common';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+@import './components/main';
+@import './components/title';
+@import './components/container';
+@import './components/glide';

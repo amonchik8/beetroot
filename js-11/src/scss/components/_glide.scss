@@ -1,0 +1,45 @@
+.glide {
+  &__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    cursor: pointer;
+    transform: translateY(-50%);
+    &--left {
+      left: 20px;
+    }
+    &--right {
+      right: 20px;
+    }
+  }
+  &__slides {
+    left: 135px;
+  }
+  &__slide {
+    &--inner {
+      position: absolute;
+      @include flex(flex-end, flex-start, column);
+      background-color: #1bf1ad;
+      flex-grow: 1;
+
+    }
+    &--inner-title {
+      @include text(28px, 600, #fff);
+      line-height: 0.9;
+      width: 300px;
+      text-transform: uppercase;
+      letter-spacing: 5.6px;
+    }
+    &--inner-description {
+      @include text(14px, 600, #fff);
+      font-size: 12px;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 2.4px;
+    }
+  }
+  &__image {
+    width: 96px;
+  }
+}
