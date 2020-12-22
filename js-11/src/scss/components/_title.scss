@@ -1,7 +1,17 @@
 .title {
-  @include text(86px, 700, black);
+  @include text(24px, 700, black);
+  @include media($screen-tablet-large) {
+    @include text(36px, 700, black);
+  }
+  @include media($screen-desktop) {
+    @include text(46px, 700, black);
+  }
+  @include media($screen-desktop-large) {
+    @include text(86px, 700, black);
+  }
   text-transform: uppercase;
   text-align: center;
   line-height: 1.1;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
+  margin-right: 20px;
 }

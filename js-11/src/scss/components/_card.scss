@@ -1,0 +1,46 @@
+.card {
+    @include flex(flex-end, stretch, column);
+    position: relative;
+    height: 300px;
+    @include media($screen-tablet-large) {
+    min-height: 400px;
+    }
+  &__inner {
+    @include flex(flex-end, flex-start, column);
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+    background-color: #1bf1ad;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__text-wrapper {
+    padding: 0 0 35px 30px;
+  }
+  &__title {
+    @include text(28px, 600, #fff);
+    line-height: 0.9;
+    max-width: 300px;
+    text-transform: uppercase;
+    letter-spacing: 5.6px;
+    margin-bottom: 10px;
+  }
+  &__author {
+    @include text(14px, 400, #fff);
+    font-size: 13px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+  }
+  &--cut {
+    max-width: 310px;
+  }
+}
