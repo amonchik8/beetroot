@@ -3,7 +3,7 @@
     <form @submit.prevent="onSubmit" class="field has-addons">
       <div class="control">
         <input
-          v-model="newTodo"
+          v-model.trim="newTodo"
           class="input"
           type="text"
           placeholder="Enter todo..."
@@ -26,8 +26,26 @@ export default {
   },
   methods: {
     onSubmit() {
-      
-    }
-  }
+      if (this.newTodo) {
+        const todo = {
+          id: Date.now(),
+          name: this.newTodo,
+          done: false,
+        };
+        this.$emit("submit", todo);
+        this.newTodo = "";
+      }
+    },
+  },
 };
 </script>
+
+<style lang="scss" scoped>
+form {
+  width: 100%;
+}
+.form-input,
+input {
+  width: 100%;
+}
+</style>
