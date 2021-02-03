@@ -1,7 +1,7 @@
 <template>
   <div class="panel-block">
     <form @submit.prevent="onSubmit" class="field has-addons">
-      <div class="control">
+      <div class="control form-input">
         <input
           v-model.trim="newTodo"
           class="input"
@@ -44,8 +44,7 @@ export default {
 form {
   width: 100%;
 }
-.form-input,
-input {
+.form-input, input {
   width: 100%;
 }
 </style>
