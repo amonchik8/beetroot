@@ -1,0 +1,19 @@
+.add-todo-list-item {
+    display: flex;
+    width: 100%;
+    
+}
+.form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.add {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: steelblue;
+}

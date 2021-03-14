@@ -1,0 +1,12 @@
+.search {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.search-panel {
+  margin-bottom: 20px;
+}
+.button-active {
+  background-color: blue;
+  color: white;
+}

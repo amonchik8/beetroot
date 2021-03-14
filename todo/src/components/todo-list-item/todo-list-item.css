@@ -1,0 +1,29 @@
+.todo-list-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.del {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(228, 68, 28);
+    margin-right: 5px;
+}
+.imp {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+}
+.on-label-click {
+    text-decoration: line-through;
+}
+.on-mark-important {
+    font-weight: bold;
+    color: steelblue;
+}
