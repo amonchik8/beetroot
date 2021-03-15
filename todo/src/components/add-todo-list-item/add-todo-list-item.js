@@ -5,16 +5,17 @@ import "./add-todo-list-item.css";
 const AddTodoListItem = ({ onAdded }) => {
   const [label, setLabel] = useState("");
 
+  const onLabelChange = (e) => {
+    setLabel((label) => {
+      return (label = e.target.value);
+    });
+  };
+
   const onSubmit = (e) => {
     e.preventDefault();
     setLabel((label) => {
       onAdded(label);
       return (label = "");
-    });
-  };
-  const onChange = (e) => {
-    setLabel((label) => {
-      return (label = e.target.value);
     });
   };
 
@@ -24,8 +25,8 @@ const AddTodoListItem = ({ onAdded }) => {
         <input
           className="input"
           type="text"
+          onChange={onLabelChange}
           value={label}
-          onChange={onChange}
         />
         <button className="add">Add Item</button>
       </form>

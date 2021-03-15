@@ -50,18 +50,16 @@ const App = () => {
 
   const visibleItems = filters(search(todoData, term), filter);
 
-
-
   const deleteItem = (id) => {
     const newArr = todoData.filter((el) => el.id !== id);
     setTodoData(newArr);
   };
 
-  const addItem = (text) => {
-    const newItem = createTodoItem(text);
-
-    const newArr = [...todoData, newItem];
-    setTodoData(newArr);
+  const onAdded = (label) => {
+    const newItem = createTodoItem(label);
+    setTodoData((todoData) => {
+      return [...todoData, newItem];
+    });
   };
 
   const onToggleProp = (arr, id, propName) => {
@@ -82,6 +80,9 @@ const App = () => {
     });
   };
 
+  const onSearchChange = (term) => {
+    return setTerm(term);
+  };
 
   const doneCount = todoData.filter((el) => el.done === true).length;
   const todoCount = todoData.length - doneCount;
@@ -89,14 +90,17 @@ const App = () => {
   return (
     <div className="app">
       <AppHeader todo={todoCount} done={doneCount} />
-      <SearchPanel />
+      <SearchPanel
+        onSearchChange={(term) => onSearchChange(term)}
+        term={term}
+      />
       <TodoList
         todos={visibleItems}
         onDeleted={deleteItem}
         onToggleImportant={onToggleImportant}
         onToggleDone={onToggleDone}
       />
-      <AddTodoListItem onAdded={addItem} />
+      <AddTodoListItem onAdded={onAdded} />
     </div>
   );
 };
