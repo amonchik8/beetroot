@@ -1,29 +1,33 @@
 .todo-list-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .del {
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background-color: rgb(228, 68, 28);
-    margin-right: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: white;
+  margin-right: 5px;
 }
 .imp {
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background-color: aquamarine;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: white;
 }
 .on-label-click {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 .on-mark-important {
-    font-weight: bold;
-    color: steelblue;
+  font-weight: bold;
+  color: steelblue;
+}
+.isImp {
+    color: gold;
+}
+.icon {
+  color: rgb(62, 122, 122);
 }

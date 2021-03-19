@@ -3,11 +3,11 @@
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    margin-bottom: 12px;
 }
 .list-item {
     text-transform: uppercase;
     width: 100%;
     padding: 10px 0;
-    border-top: 1px solid blue;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid rgb(226, 241, 241);;
 }

@@ -27,6 +27,7 @@ const AddTodoListItem = ({ onAdded }) => {
           type="text"
           onChange={onLabelChange}
           value={label}
+          placeholder="Add new..."
         />
         <button className="add">Add Item</button>
       </form>

@@ -6,7 +6,7 @@ const SearchPanel = ({ onSearchChange, term }) => {
     <div className="search">
       <input
         className="search-panel"
-        placeholder="search"
+        placeholder="Search..."
         type="text"
         value={term}
         onChange={(e) => onSearchChange(e.target.value)}

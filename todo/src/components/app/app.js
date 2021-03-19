@@ -4,6 +4,7 @@ import AppHeader from "../app-header";
 import SearchPanel from "../search-panel";
 import TodoList from "../todo-list";
 import AddTodoListItem from "../add-todo-list-item";
+import useLocalStorage from '../hooks/useLocalStorage'
 
 import "./app.css";
 import ItemStatusFilter from "../item-status-filter";
@@ -18,7 +19,7 @@ const App = () => {
     };
   };
 
-  const [todoData, setTodoData] = useState([
+  const [todoData, setTodoData] = useLocalStorage("todoData",[
     createTodoItem("drink"),
     createTodoItem("drink coffee"),
     createTodoItem("drink milk"),
@@ -108,7 +109,9 @@ const App = () => {
         onToggleImportant={onToggleImportant}
         onToggleDone={onToggleDone}
       />
+      <div className="add-input">
       <AddTodoListItem onAdded={onAdded} />
+      </div>
     </div>
   );
 };

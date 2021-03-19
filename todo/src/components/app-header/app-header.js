@@ -5,9 +5,9 @@ import "./app-header.css";
 const AppHeader = ({ todo, done }) => {
   return (
     <div className="app-header">
-      <h1>My Todo List</h1>
+      <h1>Shopping List</h1>
       <h3>
-        {todo} more to do, {done} done
+        {todo} to buy, {done} bought
       </h3>
     </div>
   );
