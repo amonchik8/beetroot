@@ -6,6 +6,7 @@ import TodoList from "../todo-list";
 import AddTodoListItem from "../add-todo-list-item";
 
 import "./app.css";
+import ItemStatusFilter from "../item-status-filter";
 
 const App = () => {
   const createTodoItem = (label) => {
@@ -81,8 +82,12 @@ const App = () => {
   };
 
   const onSearchChange = (term) => {
-    return setTerm(term);
+    setTerm(term);
   };
+
+  const onFilterChange = (filter)=> {
+    setFilter(filter)
+  }
 
   const doneCount = todoData.filter((el) => el.done === true).length;
   const todoCount = todoData.length - doneCount;
@@ -90,10 +95,13 @@ const App = () => {
   return (
     <div className="app">
       <AppHeader todo={todoCount} done={doneCount} />
-      <SearchPanel
-        onSearchChange={(term) => onSearchChange(term)}
-        term={term}
-      />
+      <div className="nav">
+        <SearchPanel
+          onSearchChange={(term) => onSearchChange(term)}
+          term={term}
+        />
+        <ItemStatusFilter filter={filter} onFilterChange={(filter) => onFilterChange(filter)} />
+      </div>
       <TodoList
         todos={visibleItems}
         onDeleted={deleteItem}

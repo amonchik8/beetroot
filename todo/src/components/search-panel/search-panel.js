@@ -1,5 +1,4 @@
 import React from "react";
-import ItemStatusFilter from "../item-status-filter";
 import "./search-panel.css";
 
 const SearchPanel = ({ onSearchChange, term }) => {
@@ -12,8 +11,6 @@ const SearchPanel = ({ onSearchChange, term }) => {
         value={term}
         onChange={(e) => onSearchChange(e.target.value)}
       />
-
-      <ItemStatusFilter />
     </div>
   );
 };

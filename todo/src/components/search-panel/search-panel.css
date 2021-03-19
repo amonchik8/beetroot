@@ -2,11 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
+  margin-right: 10px;
 }
-.search-panel {
-  margin-bottom: 20px;
-}
-.button-active {
-  background-color: blue;
-  color: white;
-}
+
