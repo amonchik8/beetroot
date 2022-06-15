@@ -1,0 +1,28 @@
+.main {
+  @include flex(center, center, column);
+  padding: 30px 0 130px;
+  &__subtitle {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3.6px;
+    text-align: center;
+    @include text(18px, 600, #303030);
+  }
+  &__wrapper-plus {
+    @include flex(flex-end, center, row);
+    margin-right: 165px;
+  }
+  &__wrapper-title {
+    @include flex(center, center, row);
+    margin-right: 48px;
+  }
+  &__wrapper-triangle {
+    @include flex(flex-start, center, row);
+    margin-bottom: 18px;
+    margin-right: 20px;
+    margin-left: 24px;
+    @include media($screen-desktop-large) {
+      margin-left: 0;
+    }
+  }
+}
